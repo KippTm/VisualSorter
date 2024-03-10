@@ -8,12 +8,26 @@
 
 <body>
     <h1>Sorting Visualizer</h1>
-    <div id="container"></div>
+    <div>
+        <label for="number">Enter num of bars</label>
+        <input type="number" name="number" id="number" value="20"/>
+        <!--<label for="delay">Set delay (in ms)</label>
+        <input type="number" name="delay" id="delay" value="100"/> -->
+    </div> 
     <div>
         <button onclick="Init()">Init</button>
+    </div>
+    <div id="container"></div>
+    <div>
+        <label for="algo">Select a Sorting algorithm:</label>
+        <select name="algo" id="algo">
+            <option value="bubble">Bubble sort</option>
+            <option value="insertion">Insertion Sort</option>
+        </select>
+    </div>
+    <div>
         <button onclick="Play()">Play</button>
     </div>
-
     <script src="script.js"></script>
 </body>
 
